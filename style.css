@@ -1,0 +1,71 @@
+:root{--navy:#172d35;--teal:#2d7775;--sand:#f3eadb;--orange:#d99562;--muted:#777}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:Manrope,sans-serif;color:var(--navy);background:#fff}
+a{text-decoration:none;color:inherit}
+header{height:80px;padding:0 8%;display:flex;align-items:center;justify-content:space-between}
+.logo{font-size:24px;font-weight:800;letter-spacing:-1.5px}.logo span{color:var(--teal)}
+.nav{display:flex;align-items:center;gap:27px;font-size:12px;font-weight:700}
+.nav-button{background:var(--navy);color:white;padding:13px 17px}
+.menu-toggle{display:none}
+.hero{padding:80px 9%;display:grid;grid-template-columns:1fr 1fr;gap:55px;align-items:center;min-height:610px}
+.eyebrow{font-size:10px;letter-spacing:2px;font-weight:800;color:var(--teal)}
+h1,h2,h3{font-family:"Playfair Display",serif}
+h1{font-size:clamp(47px,5.8vw,74px);line-height:1.07;margin:22px 0}
+h1 i{color:var(--teal);font-weight:500}
+.hero-copy>p,.market>p,.investment>p{color:var(--muted);font-size:14px;line-height:1.8;max-width:490px}
+.button{display:inline-block;margin-top:28px;padding:16px 21px;background:var(--teal);color:white;font-size:12px;font-weight:800}
+.hero-bottom{display:flex;gap:22px;margin-top:55px;flex-wrap:wrap}
+.hero-bottom span{font-size:9px;font-weight:800;letter-spacing:1px}
+.travel-art{height:440px;position:relative;overflow:hidden;background:var(--sand)}
+.art-sun{position:absolute;width:150px;height:150px;border-radius:50%;background:var(--orange);right:60px;top:40px}
+.art-mountain{position:absolute;bottom:120px;left:-10%;width:120%;height:230px;background:#8caaa0;clip-path:polygon(0 100%,28% 10%,48% 75%,70% 0,100% 100%)}
+.art-water{position:absolute;bottom:0;width:100%;height:150px;background:#568b8b;clip-path:polygon(0 20%,35% 0,65% 18%,100% 0,100% 100%,0 100%)}
+.art-house{position:absolute;z-index:2;bottom:115px;left:35%;font-size:110px;color:var(--navy)}
+.art-caption{position:absolute;z-index:3;bottom:20px;left:20px;background:white;padding:17px;display:grid;gap:8px}
+.art-caption small{font-size:9px;letter-spacing:1.5px;color:var(--teal);font-weight:800}
+.art-caption b{font:600 18px "Playfair Display"}
+.intro{padding:25px;text-align:center;background:var(--navy);color:white;font-size:10px;letter-spacing:2px}
+.section{padding:100px 9%}
+.split,.model{display:grid;grid-template-columns:1fr 1fr;gap:75px}
+h2{font-size:clamp(35px,4vw,52px);line-height:1.15;margin:18px 0 30px}
+.issues article{display:flex;gap:20px;padding:20px 0;border-bottom:1px solid #e6e6e6}
+.issues article>b{color:var(--teal)}
+.issues h3{font-size:20px}
+.issues p,.feature-grid p,.steps p,.roadmap-grid p,.market-grid p{font-size:12px;color:var(--muted);line-height:1.7;margin-top:8px}
+.solution{background:var(--sand)}
+.feature-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:40px}
+.feature-grid article{padding:25px;background:white;min-height:240px}
+.feature-grid span{font-size:9px;letter-spacing:1.4px;color:var(--teal);font-weight:800}
+.feature-grid h3{font-size:23px;margin-top:45px}
+.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;margin-top:40px}
+.steps>div{border-top:2px solid var(--teal);padding-top:20px}
+.steps b{color:var(--teal)}
+.steps h3{font-size:22px;margin-top:20px}
+.market{background:#edf4f1}
+.market-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:15px;margin-top:35px}
+.market-grid div{padding:25px;background:white}
+.market-grid small,.investment-grid small{font-size:10px;color:var(--teal);font-weight:800;letter-spacing:1.5px}
+.market-grid b{display:block;font:600 25px "Playfair Display";margin:20px 0 10px}
+.model ul{list-style:none}
+.model li{padding:18px 0;border-bottom:1px solid #ddd;font-size:13px}
+.model li:before{content:"↗";color:var(--teal);margin-right:15px}
+.roadmap{background:#f8f7f3}
+.roadmap-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-top:35px}
+.roadmap-grid div{padding:25px;background:var(--sand)}
+.roadmap-grid b{font-size:10px;color:var(--teal)}
+.roadmap-grid h3{font-size:23px;margin:24px 0 8px}
+.investment{background:var(--navy);color:white}
+.investment .eyebrow{color:#a9d4c4}
+.investment>p{color:#c3d0d2}
+.investment-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-top:40px;border-top:1px solid #4a6268;padding-top:25px}
+.investment-grid div{display:grid;gap:12px}
+.investment-grid small{color:#a9d4c4}
+.investment-grid b{font-size:14px}
+.contact{text-align:center}
+.contact h2{max-width:650px;margin:20px auto}
+.contact>a{color:var(--teal);font-weight:800}
+footer{padding:30px 9%;border-top:1px solid #eee;display:flex;justify-content:space-between}
+footer p{font-size:11px;color:var(--muted)}
+@media(max-width:800px){.menu-toggle{display:block;background:none;border:0;font-size:23px}.nav{display:none;position:absolute;top:80px;left:0;right:0;background:white;padding:25px;flex-direction:column;z-index:5}.nav.open{display:flex}.hero,.split,.model{grid-template-columns:1fr}.feature-grid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:550px){.hero,.section{padding:65px 7%}.feature-grid,.steps,.market-grid,.roadmap-grid,.investment-grid{grid-template-columns:1fr}.travel-art{height:350px}footer{padding:25px 7%;flex-direction:column;gap:15px}}
